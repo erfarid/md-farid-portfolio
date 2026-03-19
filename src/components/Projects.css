@@ -1,0 +1,157 @@
+/* === Section Container === */
+.projects-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 16px;
+  max-width: 1100px; /* ✅ consistent width */
+  margin: 0 auto 60px auto;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: var(--font-primary, "Inter", "Helvetica Neue", sans-serif);
+}
+
+/* === Dark Mode Section === */
+[data-theme="dark"] .projects-section {
+  background-color: #0b0d17; /* ✅ navy-dark like Experience */
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* === Scroll Animation === */
+.projects-scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.projects-scroll-wrapper.paused .projects-scroll {
+  animation-play-state: paused;
+}
+
+.projects-scroll {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 35s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* === Project Card === */
+.project-card {
+  background-color: #ffffff;
+  color: #111111;
+  border-radius: 1rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  width: 320px;
+  flex-shrink: 0;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-family: var(--font-primary, "Inter", "Helvetica Neue", sans-serif);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+/* === Typography === */
+.project-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.project-dates {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -4px;
+  font-weight: 400;
+}
+
+.project-desc {
+  list-style-type: disc;
+  font-family: monospace;
+  font-size: 0.9rem;
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  line-height: 1.45rem;
+  color: #333;
+}
+
+.tech-logos {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* === Dark Mode Cards === */
+[data-theme="dark"] .project-card {
+  background-color: #171a24; /* ✅ Same as Experience cards */
+  color: #ffffff;
+  border: 1px solid #2d2d2d;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.04);
+}
+
+/* Ensure all text is bright white for dark mode */
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .project-card * {
+  color: #ffffff !important;
+}
+
+/* Hover glow */
+[data-theme="dark"] .project-card:hover {
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.35);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .projects-scroll {
+    gap: 0.75rem;
+  }
+
+  .project-card {
+    width: 260px;
+  }
+}

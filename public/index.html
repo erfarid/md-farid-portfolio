@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/profile.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e0e11" />
+    <meta
+      name="description"
+      content="Portfolio of Navneet, Software Engineer, MSc Student, and Researcher."
+    />
+    <meta property="og:title" content="Navneet | Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Navneet — Developer & Researcher." />
+    <meta property="og:image" content="%PUBLIC_URL%/preview.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Navneet's Developer Portfolio</title>
+
+    <script>
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) {
+        document.body.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

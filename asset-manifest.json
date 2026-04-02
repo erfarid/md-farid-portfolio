@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/md-farid-portfolio/static/css/main.b94dd82d.css",
+    "main.js": "/md-farid-portfolio/static/js/main.16dfb12c.js",
+    "static/media/Profile.jpeg": "/md-farid-portfolio/static/media/Profile.55023148da9856ad5fb0.jpeg",
+    "index.html": "/md-farid-portfolio/index.html",
+    "main.b94dd82d.css.map": "/md-farid-portfolio/static/css/main.b94dd82d.css.map",
+    "main.16dfb12c.js.map": "/md-farid-portfolio/static/js/main.16dfb12c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b94dd82d.css",
+    "static/js/main.16dfb12c.js"
+  ]
+}

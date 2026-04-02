@@ -1,15 +1,16 @@
 const project4 = {
   id: "project4",
   title:
-    "Radiology Differential Generator – Evidence-Based Reasoning RAG System",
-  dates: "2025",
+    "SageMath Auto-Grader – Docker-Based Notebook Evaluation System for Automated SageMath Assignment Grading",
+  dates: "Feb 2025 - Apr 2025",
   description: [
-    "Developed an AI-powered diagnostic assistant using Retrieval-Augmented Generation (RAG) for automated differential diagnosis generation.",
-    "Integrated a FAISS vector database to enhance semantic retrieval across 10+ medical knowledge sources.",
-    "Built an explainable Streamlit interface enabling clinicians to validate AI reasoning chains and outputs."
+    "Built an automated SageMath grading system for evaluating student notebook submissions in a consistent containerized environment.",
+    "Used Python and Jupyter-based workflows to process SageMath notebooks and simplify assignment evaluation across different systems.",
+    "Integrated Docker to eliminate local setup issues and ensure the same grading environment on Windows, Mac, and Linux.",
+    "Structured the project for scalable deployment workflows with clean automation, reproducible execution, and maintainable grading operations."
   ],
-  techStack: ["python", "langchain", "mistral", "streamlit"],
-  thumbnail: process.env.PUBLIC_URL + "/images/projects/radiology_rag.png" // ✅ resolves locally + on GitHub Pages
+  techStack: ["python", "docker", "kubernetes", "jupyter"],
+  thumbnail: process.env.PUBLIC_URL + "/images/projects/projects4.png"
 };
 
 export default project4;

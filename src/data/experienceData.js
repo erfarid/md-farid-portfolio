@@ -34,7 +34,7 @@ const experienceData = [
   {
     role: "Web Developer",
     company: "The Sparks Foundation",
-    duration: "Jul 2022 – Aug 2022",
+    duration: " Aug 2024 – March 2025",
     description:
       "Worked as a Web Developer Intern, contributing to website development tasks, improving front-end functionality, and gaining practical experience in web technologies and project-based development.",
     logo: "Spark.svg"
